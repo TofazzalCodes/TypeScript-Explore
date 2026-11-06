@@ -1,7 +1,7 @@
 const addTwo = (a: number, b: number) : number => {
     return a + b ;
 }
-
+f
 const sum = addTwo(6, 6);
 console.log(sum);
 
@@ -12,3 +12,19 @@ console.log(sum);
 // let myBoolean: boolean = true ; 
 // let mySymbol: symbol = Symbol();
 // let myBigInt : bigint = 100n ; 
+
+// * Array and Tuple an readonly modifier
+
+const arr : string[] = ["Programming", "Hero"];
+arr.push("Next Level");
+console.log(arr);
+
+const numArr : number[] = [1,3,5];
+console.log(numArr);
+
+// const arr : Array<string> = ["programming", "hero"];
+// * tuple
+
+const dakhaLatLong: readonly [number, number] = [23.445, 893.343];
+
+dakhaLatLong.push(45454)
